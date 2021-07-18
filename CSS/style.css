@@ -1,0 +1,619 @@
+/* Start Variables */
+
+:root {
+  --main-color: rgb(7, 159, 206);
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  height: 1000px;
+}
+
+/* End Global Rules */
+
+/* Start Style */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* Small */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.header .container .headerText {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  text-transform: uppercase;
+}
+.header .container .headerText span {
+  color: var(--main-color);
+}
+
+.header .container a {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s all ease-in-out;
+  font-weight: 500;
+}
+
+.header .container a:hover {
+  color: var(--main-color);
+}
+
+.header .container ul .active {
+  color: var(--main-color);
+}
+
+.header .container ul {
+  list-style: none;
+  display: flex;
+}
+
+.header .container ul li {
+  padding-right: 15px;
+  transition: 0.5s all ease-in-out;
+}
+
+.flexB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 565px) {
+  .flexB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin-left: 15.5px;
+  }
+}
+
+.landing {
+  background-image: url(https://mewallpaper.com/thumbnail/abstract/6734-bernese-mountain-black-and-white-wallpaper-free-photo.jpg);
+  height: 700px;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.landing .textLanding {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing .textLanding h1 {
+  font-family: "Gochi Hand", cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--main-color);
+}
+
+.landing .textLanding p {
+  font-weight: bolder;
+  width: 320px;
+  font-family: "Grandstander", cursive;
+}
+
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.features .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .iconFeatures {
+  color: var(--main-color);
+}
+
+.child1 {
+  padding: 10px;
+}
+
+.child2 {
+  padding: 10px;
+}
+
+.child3 {
+  padding: 10px;
+}
+
+.features .p-feat {
+  color: rgb(66, 64, 64);
+  font-size: 14px;
+}
+
+.features .headF {
+  font-weight: bolder;
+}
+
+@media (max-width: 565px) {
+  .features .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .child1 {
+    margin-bottom: 50px;
+  }
+  .child2 {
+    margin-bottom: 50px;
+  }
+  .p-feat {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+.services {
+  position: relative;
+  margin-top: 50px;
+}
+
+.services .container .special-heading {
+  color: #ebeced;
+  font-size: 100px;
+  font-family: "Bangers", cursive;
+}
+
+.services .container .text-services {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services .container .text-services p {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .services .container .text-services .special-heading {
+    font-size: 65px;
+  }
+  .services .container .text-services p {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    width: fit-content;
+    font-weight: 500;
+  }
+}
+
+.services-section2 {
+  margin-top: 160px;
+}
+
+.Scontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Scontent .sectionS {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-section2 .Scontent .sectionS img {
+  width: 285px;
+  padding: 20px;
+}
+
+.services-section2 .Scontent .sectionS h4 {
+  display: inline-block;
+}
+
+.services-section2 .Scontent .sectionS p {
+  font-size: 13px;
+  width: 260px;
+}
+
+.services-section2 .Scontent .sectionS i {
+  color: var(--main-color);
+  padding: 5px;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .services-section2 .Scontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 565px) {
+  .services-section2 .Scontent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .services-section2 .Scontent p {
+    width: fit-content;
+  }
+  .services-section2 {
+    text-align: center;
+  }
+  .services-section2 .Scontent .sectionS img {
+    width: 200px;
+  }
+}
+
+.portfolio {
+  position: relative;
+  margin-top: 70px;
+}
+
+.portfolio .prot-heading {
+  color: #ebeced;
+  font-size: 100px;
+  font-family: "Bangers", cursive;
+}
+
+.portfolio .text-portfolio {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -220px;
+}
+
+.portfolio .text-portfolio p {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .portfolio .text-portfolio .prot-heading {
+    font-size: 65px;
+  }
+  .portfolio .text-portfolio p {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    width: fit-content;
+    font-weight: 500;
+  }
+}
+
+.prot2 {
+  background-color: #f6f6f6;
+  padding-bottom: 43px;
+}
+
+.prot2 .container .port-sections {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 200px;
+}
+.prot2 .container .sec1 {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.prot2 .container .content-portfolio {
+  padding: 20px;
+}
+
+.prot2 .container .sec1 img {
+  width: 290px;
+  height: 270px;
+  text-align: center;
+}
+
+.prot2 .container .sec1 p {
+  margin-top: -10px;
+  font-size: 13px;
+}
+
+.prot2 .container .sec2 {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.prot2 .container .sec2 img {
+  width: 290px;
+  height: 270px;
+}
+
+.prot2 .container .sec2 p {
+  margin-top: -10px;
+  font-size: 13px;
+}
+
+.prot2 .container .sec3 {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.prot2 .container .sec3 img {
+  width: 290px;
+  height: 270px;
+}
+
+.prot2 .container .sec3 p {
+  margin-top: -10px;
+  font-size: 13px;
+}
+
+@media (max-width: 565px) {
+  .portfolio .prot2 .container .port-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 25px;
+  }
+  .portfolio .prot2 .container .port-sections .sec1 {
+    margin-bottom: 15px;
+  }
+  .portfolio .prot2 .container .port-sections .sec2 {
+    margin-bottom: 15px;
+  }
+  .portfolio .text-portfolio {
+    position: absolute;
+    left: 50%;
+    top: 21.5%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.about {
+  margin-top: 100px;
+  position: relative;
+}
+
+.about .about-heading {
+  color: #ebeced;
+  font-size: 100px;
+  font-family: "Bangers", cursive;
+}
+
+.about .text-about {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about .text-about p {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .about .text-about .about-heading {
+    font-size: 65px;
+  }
+  .about .text-about p {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    width: fit-content;
+    font-weight: 500;
+  }
+}
+
+.about2 {
+  margin-top: 300px;
+}
+
+.about2 .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about2 .container .sec2 {
+  margin-left: 225px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.about2 .container .line {
+  width: 260px;
+  height: 3px;
+  margin-top: 70px;
+  background-color: var(--main-color);
+}
+
+.about2 .container .sec2 p {
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
+}
+
+.contact {
+  margin-top: 140px;
+  position: relative;
+}
+
+.contact .contact-heading {
+  color: #ebeced;
+  font-size: 100px;
+  font-family: "Bangers", cursive;
+}
+
+.contact .text-contact {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact .text-contact p {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .contact .text-contact .contact-heading {
+    font-size: 65px;
+  }
+  .contact .text-contact p {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    width: fit-content;
+    font-weight: 500;
+  }
+}
+
+.contact .container .contact-emailing {
+  position: absolute;
+  top: 100px;
+}
+
+.contact .container .contact-emailing p {
+  font-size: 30px;
+  font-weight: 800;
+  color: #2c4755;
+  padding: 20px;
+}
+
+.contact .container .contact-emailing .email {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 27px;
+  font-weight: 800;
+  position: absolute;
+  top: 100px;
+  margin-left: 40px;
+}
+
+.contact .container .contact-emailing .icons {
+  padding: 25px 70px;
+  font-size: 13px;
+}
+
+.contact .container .contact-emailing .icons span {
+  margin-right: 40px;
+  font-weight: 600;
+}
+
+.contact .container .contact-emailing .icons i {
+  margin-right: 20px;
+  color: #000;
+  transition: 0.35s all ease-in-out;
+}
+
+.contact .container .contact-emailing .icons .face:hover {
+  color: #3b5998;
+}
+
+.contact .container .contact-emailing .icons .twit:hover {
+  color: #00acee;
+}
+
+.contact .container .contact-emailing .icons .gmail:hover {
+  color: #d50f25;
+}
+
+footer {
+  margin-top: 550px;
+  width: 100%;
+  height: 45px;
+  background-color: #2c4755;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  padding: 13px;
+}
+
+footer p span {
+  color: rgb(7, 159, 206);
+}
+
+/* End Style */
+/* Gj */
